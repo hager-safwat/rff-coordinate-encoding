@@ -67,7 +67,7 @@ python rff_encoding_demo.py
 It runs on CPU in a few seconds and regenerates `figure.png` and the results
 table.
 
-## Scope and honesty
+## Hint
 
 This is a **mechanism demo on fully synthetic data** — it isolates *why* a
 fixed coordinate encoding transfers where a learned table cannot. It is not a
