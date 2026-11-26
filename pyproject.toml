@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rff-coordinate-encoding"
+version = "0.2.0"
+description = "Fixed Random Fourier Feature coordinate encoding that transfers across sensor networks"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Hager Othman", email = "hagersafwat94@gmail.com" }]
+requires-python = ">=3.10"
+dependencies = ["numpy", "torch"]
+keywords = ["random fourier features", "positional encoding", "spatial", "pytorch"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+demo = ["matplotlib"]
+dev = ["matplotlib", "pytest", "ruff"]
+
+[project.urls]
+Repository = "https://github.com/hager-safwat/rff-coordinate-encoding"
+
+[tool.setuptools]
+packages = ["rff_encoding"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

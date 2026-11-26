@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Transferable coordinate encoding with Random Fourier Features"
+authors:
+  - family-names: Othman
+    given-names: Hager
+version: 0.2.0
+date-released: 2026-11-26
+license: MIT
+repository-code: "https://github.com/hager-safwat/rff-coordinate-encoding"
